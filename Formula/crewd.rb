@@ -10,16 +10,16 @@ class Crewd < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/crewdhq/crewd-cli/releases/download/v0.1.0/crewd-cli_Darwin_x86_64.tar.gz"
-      sha256 "2afd935ec76e0a8b9aae763e023d44615a7b2e97caf1fc89a6ce0fd9be512cb5"
+      url "https://github.com/crewdhq/homebrew-tap/releases/download/v0.1.0/crewd_Darwin_x86_64.tar.gz"
+      sha256 "45916324a5b6a8441dcc96878d9cc71b6ca1b28389021dc1c0c2d86097e828c7"
 
       define_method(:install) do
         bin.install "crewd"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/crewdhq/crewd-cli/releases/download/v0.1.0/crewd-cli_Darwin_arm64.tar.gz"
-      sha256 "9590691d98026a9515663db5b5a37cf0c84ab8a2ebd04ed1597d3936fa19e8d7"
+      url "https://github.com/crewdhq/homebrew-tap/releases/download/v0.1.0/crewd_Darwin_arm64.tar.gz"
+      sha256 "37e21a798a3c05cd5a9748d25fcfb1a7736d2388e4f3b10ae4dd410881abcdcb"
 
       define_method(:install) do
         bin.install "crewd"
@@ -29,15 +29,15 @@ class Crewd < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/crewdhq/crewd-cli/releases/download/v0.1.0/crewd-cli_Linux_x86_64.tar.gz"
-      sha256 "928aacbadca0d6870037a4380df8135f6db243855fa506902e0d8e673019ac62"
+      url "https://github.com/crewdhq/homebrew-tap/releases/download/v0.1.0/crewd_Linux_x86_64.tar.gz"
+      sha256 "b34a7bd527bf8f56cb33e33cb51ba142521fc8b9fcbdce578284075094b9caa1"
       define_method(:install) do
         bin.install "crewd"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/crewdhq/crewd-cli/releases/download/v0.1.0/crewd-cli_Linux_arm64.tar.gz"
-      sha256 "0e6c7fdbde6cc4bde46f1164f772dda8c227c8522f460f68af056a92224346c9"
+      url "https://github.com/crewdhq/homebrew-tap/releases/download/v0.1.0/crewd_Linux_arm64.tar.gz"
+      sha256 "42db946a3900bea210ba0957a83699a415855d7869bf9c3926b79473198946f4"
       define_method(:install) do
         bin.install "crewd"
       end
