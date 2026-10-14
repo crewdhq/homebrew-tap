@@ -5,21 +5,21 @@
 class Crewd < Formula
   desc "The package manager for prompt-defined AI agents, skills, and teams"
   homepage "https://crewd.dev"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/crewdhq/homebrew-tap/releases/download/v0.1.3/crewd_Darwin_x86_64.tar.gz"
-      sha256 "a24f420e826480ead924b2cc16810727e1f11bc3a116718e55cb2539f4b95250"
+      url "https://github.com/crewdhq/homebrew-tap/releases/download/v0.1.4/crewd_Darwin_x86_64.tar.gz"
+      sha256 "59e564aaed37cff980b52080fb1fda630d9a1379350b0422f2c326ec928e66eb"
 
       define_method(:install) do
         bin.install "crewd"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/crewdhq/homebrew-tap/releases/download/v0.1.3/crewd_Darwin_arm64.tar.gz"
-      sha256 "4455eb0e4d6eeddedd9f93f01d004b79477c64d731b1403cb9a898548a550059"
+      url "https://github.com/crewdhq/homebrew-tap/releases/download/v0.1.4/crewd_Darwin_arm64.tar.gz"
+      sha256 "fe3a390b0460565a0c55afe9f015b4edbc9191a9e3c1e5906a864ebfa28b4740"
 
       define_method(:install) do
         bin.install "crewd"
@@ -29,15 +29,15 @@ class Crewd < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/crewdhq/homebrew-tap/releases/download/v0.1.3/crewd_Linux_x86_64.tar.gz"
-      sha256 "2458db8ce2a104f71b8c70e58da2884cde36b707f4bed5098a5944349ef5bc33"
+      url "https://github.com/crewdhq/homebrew-tap/releases/download/v0.1.4/crewd_Linux_x86_64.tar.gz"
+      sha256 "5f0b6a1fef4200464aca2a0e5579aec2ad9deb4260d603e3855f63f55145254e"
       define_method(:install) do
         bin.install "crewd"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/crewdhq/homebrew-tap/releases/download/v0.1.3/crewd_Linux_arm64.tar.gz"
-      sha256 "8938b0c00fd77b69a06adf1f3f399350bbc95571c8171f82470b83ae0ef79daa"
+      url "https://github.com/crewdhq/homebrew-tap/releases/download/v0.1.4/crewd_Linux_arm64.tar.gz"
+      sha256 "7eda40cdbe27811c47588b110d09d2701cf6e6a16f4416dc09dd59e5cef238cd"
       define_method(:install) do
         bin.install "crewd"
       end
