@@ -11,7 +11,7 @@ class Crewd < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/crewdhq/homebrew-tap/releases/download/v0.1.7/crewd_Darwin_x86_64.tar.gz"
-      sha256 "bf69a3af1d863823c949802ac7827fd9e13308ffedd85ed7df4ab3b2c795beab"
+      sha256 "13208c688aacdb34185d4693871a783a25229d8c4aa1be73b50f51750ab48a2f"
 
       define_method(:install) do
         bin.install "crewd"
@@ -19,7 +19,7 @@ class Crewd < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/crewdhq/homebrew-tap/releases/download/v0.1.7/crewd_Darwin_arm64.tar.gz"
-      sha256 "69e90ea00329db7095f360e5ff3d2bff1cd19c791cc88e3e5456e45a9e10be15"
+      sha256 "32e5650362fad5dab736139d7f6e02307f1f1aea109cf6b1fc5b23e91a8c235d"
 
       define_method(:install) do
         bin.install "crewd"
@@ -30,14 +30,14 @@ class Crewd < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/crewdhq/homebrew-tap/releases/download/v0.1.7/crewd_Linux_x86_64.tar.gz"
-      sha256 "2f989ada37f6695f57798068c2f5eae95a1c7047b21f967274e6df3722feffc3"
+      sha256 "18a582ba2b553b367a176b1cec579ce625e29219e4bc6249860eceafdc27d9ad"
       define_method(:install) do
         bin.install "crewd"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/crewdhq/homebrew-tap/releases/download/v0.1.7/crewd_Linux_arm64.tar.gz"
-      sha256 "4a19b35e99d23da8dc8f7135ce3cc253972ef6931ce4ef77e9bef650a30df9d8"
+      sha256 "d0773e03fc75f7f664d0f27ca3919768222c71e464382ebc0da441f26d518768"
       define_method(:install) do
         bin.install "crewd"
       end
